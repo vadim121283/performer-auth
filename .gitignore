@@ -1,0 +1,8 @@
+/node_modules
+/dist
+
+# Database
+/database
+
+# Logs
+/logs

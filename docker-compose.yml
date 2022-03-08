@@ -1,0 +1,26 @@
+---
+version: '3.7'
+
+services:
+  performer-auth:
+    image: node:16
+    user: 'node'
+    working_dir: '/home/node/app'
+    environment:
+      - 'NODE_ENV=production'
+    volumes:
+      - './:/home/node/app'
+    ports:
+      - '7000:7000'
+    command: 'npm run start-docker'
+  database:
+    image: mongo
+    environment:
+      - MONGO_INITDB_DATABASE=performer-auth
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=password
+    volumes:
+      - ./init/init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
+      - ./database:/data/db
+    ports:
+      - '27017-27019:27017-27019'

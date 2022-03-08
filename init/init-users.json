@@ -1,0 +1,23 @@
+[
+  {
+    "guid": "5a6562c8-0b4b-4685-afcd-87098f55b986",
+    "login": "user1",
+    "password": "password1",
+    "role": "admin",
+    "team": "team1"
+  },
+  {
+    "guid": "0a503d45-2cdf-4dca-a4c8-29eda8a8d8f9",
+    "login": "user2",
+    "password": "password2",
+    "role": "teamlead",
+    "team": "team1"
+  },
+  {
+    "guid": "f09d8e89-c30e-4524-bdf0-87fcc09f3894",
+    "login": "user3",
+    "password": "password3",
+    "role": "staff",
+    "team": "team1"
+  }
+]

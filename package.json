@@ -1,0 +1,22 @@
+{
+  "name": "performer-auth",
+  "version": "1.0.0",
+  "description": "Auth PR",
+  "main": "index.ts",
+  "scripts": {
+    "start": "tsc && node dist/src/index.js",
+    "start-docker": "node_modules/typescript/bin/tsc && node dist/index.js",
+    "serve": "concurrently \"npm run build.w\" \"nodemon --watch ./dist ./dist/index.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vadim Akhmatov",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/jsonwebtoken": "^8.5.8"
+  }
+}
