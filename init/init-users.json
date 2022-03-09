@@ -4,20 +4,23 @@
     "login": "user1",
     "password": "password1",
     "role": "admin",
-    "team": "team1"
+    "team": "team1",
+    "accessTypes": ["GQL", "getUsers", "addUsers", "updateUsers", "deleteUsers"]
   },
   {
     "guid": "0a503d45-2cdf-4dca-a4c8-29eda8a8d8f9",
     "login": "user2",
     "password": "password2",
     "role": "teamlead",
-    "team": "team1"
+    "team": "team1",
+    "accessTypes": ["GQL", "getUsers", "addUsers", "updateUsers"]
   },
   {
     "guid": "f09d8e89-c30e-4524-bdf0-87fcc09f3894",
     "login": "user3",
     "password": "password3",
     "role": "staff",
-    "team": "team1"
+    "team": "team1",
+    "accessTypes": ["GQL", "getUsers", "addUsers"]
   }
 ]
