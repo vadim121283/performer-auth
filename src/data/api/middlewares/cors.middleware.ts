@@ -15,6 +15,6 @@ export const corsServer =
       'GET, POST, PUT, DELETE, OPTIONS'
     );
     res.header('Access-Control-Allow-Credentials', 'true');
-    if (req.method === 'OPTIONS') return res.send(204);
+    if (req.method === 'OPTIONS') return res.sendStatus(204);
     next();
   };

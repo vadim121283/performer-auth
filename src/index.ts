@@ -17,7 +17,7 @@ app.use(corsServer());
 
 app.use(express.json());
 
-app.post('/api/auth', (req, res) => {
+app.post('/auth', (req, res) => {
   for (let user of users) {
     if (req.body.login === user.login && req.body.password === user.password) {
       return res.status(200).json({
@@ -31,6 +31,5 @@ app.post('/api/auth', (req, res) => {
   return res.status(404).json({ message: 'User not found' });
 });
 
-app.listen(config.port, config.host, () =>
-  console.log(`Auth server listens http://${config.host}:${config.port}`)
-);
+app.listen(config.port);
+console.log(`🚀 Auth server listens http://localhost:${config.port}`);
